@@ -82,7 +82,7 @@ Output: Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that, 4
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Please contact me at kendra@coffeeringsdesign.com if you have questions, ideas or concerns.  Please feel free to add to my code and let me know about it!_
 
 ## Technologies Used
 
@@ -90,6 +90,6 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*DMI*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2018 **_Kendra Kelly_**
