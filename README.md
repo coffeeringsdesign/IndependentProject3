@@ -47,7 +47,6 @@ Application implements a loop and works as expected._
 Program recognized NaN and replies back asking for a number
 Example: thisismynumber
 Output: ["Please enter a number."]
-
 Program limits the amount of numbers that can be entered
 Example: 0 4 5666
 Output: ["Please enter a single number."]
@@ -55,27 +54,21 @@ Output: ["Please enter a single number."]
 Program replaces a single "0" with a "Beep!"
 Example: 0
 Output: ["Beep!"]
-
 Program replaces a single "1" with a "Boop!"
 Example: 1
 Output: ["Boop!"]
-
 Program replaces a single "3" with a "I'm sorry, Dave. I'm afraid I can't do that."
 Example: 3
 Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
-
 If the entire number includes a "0" the whole thing is replaced with a "Beep!"
 Example: 60006
 Output: ["Beep!"]
-
 If the entire number includes a "1" the whole thing is replaced with a "Boop!"
 Example: 511
 Output: ["Boop!"]
-
 If the number is divisible by "3"" the whole this is replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 Example: 15
 Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
-
 Once a number is submitted the output shows every number counting up to that number replaced according to the specs above.
 Example: 4
 Output: Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that, 4
