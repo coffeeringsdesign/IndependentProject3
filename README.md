@@ -77,6 +77,10 @@ Output: Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that, 4
 
 _Please contact me at kendra@coffeeringsdesign.com if you have questions, ideas or concerns.  Please feel free to add to my code and let me know about it!_
 
+## Sources
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+
 ## Technologies Used
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_

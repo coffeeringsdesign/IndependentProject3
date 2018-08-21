@@ -2,47 +2,36 @@
 var beep = "Beep!";
 var boop = "Boop!";
 var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
-var robotResponseArray = [];
 
-for (var i = 0; i < newInputArray.length; i +=1) {
-  if (i === "0") {
-    robotResponseArray.push(beep);
-  } else if (i === "1") {
-    robotResponseArray.push(boop);
-  } else if (i === "2" || i === "3" || i === "4" || i === "5" || i === "6" || i === "7" || i === "8" || i === "9") {
-    robotResponseArray.push(i);
-  } else {
-    alert("this aint working");
-  }
-  if (inputNumber % 3 === 0) {
-    robotResponseArray.push(dave);
+
+var textReplaceNumbers = function(inputNumber) {
+  var robotResponseArray = [];
+  var numberString = inputNumber.toString();
+console.log(inputNumber);
+  for (var i = 0; i <= inputNumber; i +=1) {
+    if (inputNumber !=0 && inputNumber % 3 === 0) {
+      robotResponseArray.push(dave);
+    } else if (numberString.includes(1)) {
+      robotResponseArray.push(boop);
+    } else if (numberString.includes(0)) {
+      robotResponseArray.push(beep);
+    } else {
+      robotResponseArray.push(i);
+      var robotResponse = robotResponseArray.toString();
+
+    }
 }
-});
-});
-//   //   } else if (i % 3) {
-//   //     splitRobotResponse[i] = "I'm sorry, Dave. I'm afraid I can't do that.";
-//   //   } else if (i > 3 || i <= 9) {
-//   //     splitRobotResponse[i] = (i);
-//   //   }
-//   //   return splitRobotResponse;
-//   //   // console.log(inputArray);
-//   // }
+};
 //
-// }
-
-
+//     return robotResponse;
 
 // // user interface Logic
 $(document).ready(function() {
-  $("#inputForm").submit(function(event) {
-    $("#inputForm").text("");
+  $("form#inputForm").submit(function(event) {
     event.preventDefault();
-
-
-    // to later be backend
-
-
-      // return;
-    }
-    var inputNumber = parseInt($("#inputNumber").val());
-    // var newInputArray = inputNumber.split("");
+    var inputNumber = parseInt($("input#inputNumber").val());
+    $('input[type="number"], textarea').val('');
+    var numberOutput = textReplaceNumbers(inputNumber);
+    $("#result").text(numberOutput);
+  });
+});
