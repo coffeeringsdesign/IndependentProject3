@@ -14,7 +14,7 @@ for (var i = 0; i < newInputArray.length; i +=1) {
   } else {
     alert("this aint working");
   }
-  if (inputNumber / 3) {
+  if (inputNumber % 3 === 0) {
     robotResponseArray.push(dave);
 }
 });
