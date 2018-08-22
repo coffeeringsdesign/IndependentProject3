@@ -10,17 +10,14 @@ _A basic exercise in javascript to allow the user to input numbers and get back 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _clone this git: https://github.com/coffeeringsdesign/IndependentProject3.git_
+* _use atom to edit html , js & css files_
+* _Chrome to see user interface_
+* _I recommend Github for version control_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_It isn't yet working_
 
 ## Objectives
 
@@ -44,34 +41,29 @@ Application implements a loop and works as expected._
 
 ## Specifications
 
-Program recognized NaN and replies back asking for a number
-Example: thisismynumber
-Output: ["Please enter a number."]
-Program limits the amount of numbers that can be entered
-Example: 0 4 5666
-Output: ["Please enter a single number."]
-
-Program replaces a single "0" with a "Beep!"
+_Program replaces a any number including an "0" with a "Beep!" It shows returns for all numbers previous to submitted number.
 Example: 0
-Output: ["Beep!"]
-Program replaces a single "1" with a "Boop!"
+Output: ["Beep!"]_
+
+_Program replaces a any number including an "1" with a "Boop!" It shows returns for all numbers previous to submitted number.
 Example: 1
-Output: ["Boop!"]
-Program replaces a single "3" with a "I'm sorry, Dave. I'm afraid I can't do that."
+Output: ["Beep!", "Boop!"]_
+
+_Program replaces a single "3" with a "I'm sorry, Dave. I'm afraid I can't do that."
 Example: 3
-Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
-If the entire number includes a "0" the whole thing is replaced with a "Beep!"
-Example: 60006
-Output: ["Beep!"]
-If the entire number includes a "1" the whole thing is replaced with a "Boop!"
-Example: 511
-Output: ["Boop!"]
-If the number is divisible by "3"" the whole this is replaced with "I'm sorry, Dave. I'm afraid I can't do that."
-Example: 15
-Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
-Once a number is submitted the output shows every number counting up to that number replaced according to the specs above.
-Example: 4
-Output: Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that, 4
+Output: ["Beep!" , "Boop!" , "I'm sorry, Dave. I'm afraid I can't do that."]_
+
+_Program recognized NaN and replies back asking for a number
+Example: thisismynumber
+Output: ["Please enter a number."]_
+
+_Program limits the amount of numbers that can be entered
+Example: 0 4 5666
+Output: ["Please enter a single number."]_
+
+_If the number is divisible by "3"" the whole this is replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+Example: 3
+Output: ["Beep" "Boop" "2" "I'm sorry, Dave. I'm afraid I can't do that."]_
 
 ## Support and contact details
 
@@ -83,7 +75,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_HTML, CSS, Bootstrap, JQuery, & Javascript_
 
 ### License
 
