@@ -2,6 +2,7 @@
   text-align: center;
   font-family: 'VT323', monospace;
   font-size: 30px;
+  color: white;
 }
 
 body {
@@ -12,11 +13,14 @@ body {
   display: none;
 }
 
-.well {
+#websiteContent {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  background-color: #254b00;
+  border: 5px solid #7cfc00;
+  margin-bottom: 30px;
 }
 
 ul {

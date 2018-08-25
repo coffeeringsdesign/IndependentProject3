@@ -21,47 +21,49 @@ _It isn't yet working_
 
 ## Objectives
 
-_JavaScript business logic and user interface logic are separate.
+_JavaScript business logic and user interface logic are separate. XX
 
-Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+Variable names are descriptive and use lower camel case (e.g. myVariableExample). XX
 
-Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
+Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools. XX
 
-All previous objectives have been met.
+All previous objectives have been met. XX
 
-Logic is broken down into "plain English" specs, listed in README.
+Logic is broken down into "plain English" specs, listed in README. xx
 
-Project is in a presentable, portfolio-quality state.
+Project is in a presentable, portfolio-quality state. xx
 
 Required functionality is in place by Friday deadline.
 
-Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology. xx
 
-Application implements a loop and works as expected._
+Application implements a loop and works as expected._ xx
 
 ## Specifications
 
-_Program replaces a any number including an "0" with a "Beep!" It shows returns for all numbers previous to submitted number.
+_Program replaces a any number including an "0" with a "Beep!", it shows returns for all numbers previous to submitted number.
 Example: 0
 Output: ["Beep!"]_
 
-_Program replaces a any number including an "1" with a "Boop!" It shows returns for all numbers previous to submitted number.
+_Program replaces a any number including an "1" with a "Boop!", it shows returns for all numbers previous to submitted number.
 Example: 1
 Output: ["Beep!", "Boop!"]_
 
-_Program replaces a single "3" with a "I'm sorry, Dave. I'm afraid I can't do that."
+_Program replaces a single "3" with a "I'm sorry, Dave. I'm afraid I can't do that.", it shows returns for all numbers previous to submitted number.
 Example: 3
 Output: ["Beep!" , "Boop!" , "I'm sorry, Dave. I'm afraid I can't do that."]_
 
 _Program recognized NaN and replies back asking for a number
 Example: thisismynumber
-Output: ["Please enter a number."]_
+Output: ["Please enter a number."]
+note this was done by setting input to number)_
 
 _Program limits the amount of numbers that can be entered
 Example: 0 4 5666
-Output: ["Please enter a single number."]_
+Output: ["Please enter a single number."]
+(note this was done by setting input to number)_
 
-_If the number is divisible by "3"" the whole this is replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+_If the number is divisible by "3"" the whole this is replaced with "I'm sorry, Dave. I'm afraid I can't do that. It shows returns for all numbers previous to submitted number"
 Example: 3
 Output: ["Beep" "Boop" "2" "I'm sorry, Dave. I'm afraid I can't do that."]_
 

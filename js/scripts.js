@@ -29,9 +29,7 @@ $(document).ready(function() {
     inputNumber = $("input#visitorInput").val();
     $('input[type="number"], textarea').val('');
     textReplaceNumbers(inputNumber);
-    robotResponse.forEach(function(number) {
-      $("#finalOutput").append("<li id='finalOutput'>" + robotResponse + "</li>");
-  });
+    $("#finalOutput").append("<li id='finalOutput'>" + robotResponse + "</li>");
     $("#toHide").show();
   });
 });
