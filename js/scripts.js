@@ -1,49 +1,39 @@
 // // business logic
 var inputNumber;
-var beep = "Beep!"; //variable that says beep
-var boop = "Boop!"; // variable that says boop
-var dave = "I'm sorry, Dave. I'm afraid I can't do that."; //variable that says i'm sorry
-var robotResponseArray = []; //an empty array to put the outputs too - before joining
-// var robotResponse = robotResponseArray.toString();
+var beep = "Beep!";
+var boop = "Boop!";
+var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
+var robotResponse = [];
+console.log(robotResponse);
 
-
-
-
-function textReplaceNumbers(inputNumber) { //being called with inputNumber showing
+function textReplaceNumbers(inputNumber) {
+  for (var i = 0; i <= inputNumber; i++) {
   var numberString = inputNumber.toString();
-  for (var i = 0; i <= numberString.length; i +=1) { //loop thru input
-    if (inputNumber !=0 && inputNumber % 3 === 0) { // divided by 3
-      robotResponseArray.push(dave); //push dave into the array
-      console.log(robotResponseArray);
-      // return; working from here up
+    if (inputNumber !=0 && inputNumber % 3 === 0) {
+      robotResponse.push(dave);
+      return;
     } else if (inputNumber === 1 || numberString.includes("1")) {
-      robotResponseArray.push(boop);
-      console.log(robotResponseArray);
+      robotResponse.push(boop);
       return;
     } else if (inputNumber === 0 || numberString.includes("0")) {
-      robotResponseArray.push(beep);
-      console.log(robotResponseArray);
+      robotResponse.push(beep);
       return;
-    // } else {
-    //   robotResponseArray.push(i);
+    } else {
+      robotResponse.push(inputNumber);
+      return;
     }
-    // return robotResponse.split(",").join(", ");
 }
 }
 // // user interface Logic
 $(document).ready(function() {
-  $("form#inputForm").submit(function(event) { //pullsdata from input form
-    event.preventDefault(); //stops automatic submit function
-    inputNumber = $("input#visitorInput").val(); //sets input number for the entered value as variable ---- not string - working
-    $('input[type="number"], textarea').val(''); //resets the form
-    var result = ""; //sets an empty varible string
-    textReplaceNumbers(inputNumber); //calls the function
-
-
-    var robotResponseArray = [];
-    robotResponseArray.forEach(function(number) {
-      $("#results").append('<li class="finalOutput">' + textReplaceNumbers(number) + '</li>');
+  $("form#inputForm").submit(function(event) {
+    event.preventDefault();
+    inputNumber = $("input#visitorInput").val();
+    $('input[type="number"], textarea').val('');
+    textReplaceNumbers(inputNumber)
+    robotResponse.forEach(function(number) {
+      $("#finalOutput").append("<li id='finalOutput'>" + robotResponse + "</li>");
     })
-    $("#finalOutput").show();
+    $("#toHide").show();
   });
 });
