@@ -10,15 +10,20 @@ var robotResponseArray = []; //an empty array to put the outputs too - before jo
 
 
 function textReplaceNumbers(inputNumber) { //being called with inputNumber showing
-  var numberString = inputNumber.split(" ");
+  var numberString = inputNumber.toString();
   for (var i = 0; i <= numberString.length; i +=1) { //loop thru input
     if (inputNumber !=0 && inputNumber % 3 === 0) { // divided by 3
       robotResponseArray.push(dave); //push dave into the array
-      console.log(robotResponseArray); //working for divided by 3
-    } else if (i.includes("1")) {
+      console.log(robotResponseArray);
+      // return; working from here up
+    } else if (inputNumber === 1 || numberString.includes("1")) {
       robotResponseArray.push(boop);
-    // } else if (i.includes("0")) {
-    //   robotResponseArray.push(beep);
+      console.log(robotResponseArray);
+      return;
+    } else if (inputNumber === 0 || numberString.includes("0")) {
+      robotResponseArray.push(beep);
+      console.log(robotResponseArray);
+      return;
     // } else {
     //   robotResponseArray.push(i);
     }
