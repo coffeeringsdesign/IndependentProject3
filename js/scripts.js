@@ -4,25 +4,23 @@ var beep = "Beep!";
 var boop = "Boop!";
 var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
 var robotResponse = [];
-console.log(robotResponse);
+var robotResponseFinal = [];
+// console.log(robotResponse);
 
 function textReplaceNumbers(inputNumber) {
   for (var i = 0; i <= inputNumber; i++) {
-  var numberString = inputNumber.toString();
-    if (inputNumber !=0 && inputNumber % 3 === 0) {
+  // var numberString = inputNumber.toString();
+    if (i !=0 && i % 3 === 0) {
       robotResponse.push(dave);
-      return;
-    } else if (inputNumber === 1 || numberString.includes("1")) {
+    } else if (i.toString().indexOf("1") > -1) {
       robotResponse.push(boop);
-      return;
-    } else if (inputNumber === 0 || numberString.includes("0")) {
+    } else if (i.toString().indexOf('0') > -1) {
       robotResponse.push(beep);
-      return;
     } else {
-      robotResponse.push(inputNumber);
-      return;
+      robotResponse.push(i);
     }
 }
+return robotResponse;
 }
 // // user interface Logic
 $(document).ready(function() {
@@ -30,10 +28,10 @@ $(document).ready(function() {
     event.preventDefault();
     inputNumber = $("input#visitorInput").val();
     $('input[type="number"], textarea').val('');
-    textReplaceNumbers(inputNumber)
+    textReplaceNumbers(inputNumber);
     robotResponse.forEach(function(number) {
       $("#finalOutput").append("<li id='finalOutput'>" + robotResponse + "</li>");
-    })
+  });
     $("#toHide").show();
   });
 });
