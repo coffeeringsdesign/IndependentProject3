@@ -1,35 +1,33 @@
-// // business logic
-var inputNumber;
-var beep = "Beep!";
-var boop = "Boop!";
-var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
+// business logic
 var robotResponse = [];
-var robotResponseFinal = [];
-// console.log(robotResponse);
 
 function textReplaceNumbers(inputNumber) {
-  for (var i = 0; i <= inputNumber; i++) {
-  // var numberString = inputNumber.toString();
+  for (var i = 1; i <= inputNumber; i++) {
     if (i !=0 && i % 3 === 0) {
-      robotResponse.push(dave);
+      robotResponse.push(" I'm sorry, Dave. I'm afraid I can't do that");
     } else if (i.toString().indexOf("1") > -1) {
-      robotResponse.push(boop);
+      robotResponse.push(" boop");
     } else if (i.toString().indexOf('0') > -1) {
-      robotResponse.push(beep);
+      robotResponse.push(" beep");
     } else {
-      robotResponse.push(i);
+      robotResponse.push(" " + i);
     }
+  }
+  return robotResponse;
 }
-return robotResponse;
-}
-// // user interface Logic
+
+// user interface Logic
 $(document).ready(function() {
   $("form#inputForm").submit(function(event) {
     event.preventDefault();
-    inputNumber = $("input#visitorInput").val();
+    $(".finalOutput").empty();
+    const inputNumber = $("input#visitorInput").val();
     $('input[type="number"], textarea').val('');
     textReplaceNumbers(inputNumber);
-    $("#finalOutput").append("<li id='finalOutput'>" + robotResponse + "</li>");
+    const robotResponseFinal = robotResponse.toString();
+    $(".finalOutput").append("<h3>" + robotResponseFinal + "</h3>");
+    $("#Gary1").addClass("toHide");
+    $("#Gary2").removeClass("toHide");
     $("#toHide").show();
   });
 });

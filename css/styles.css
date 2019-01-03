@@ -1,26 +1,74 @@
+/* dark green 2BA84A */
+/* light green #6FC685 */
+/* black #040F04 */
+/* grey #586666
+light grey A2BCBC */
+
 * {
-  text-align: center;
+  text-align: left;
   font-family: 'VT323', monospace;
   font-size: 30px;
   color: white;
 }
 
 body {
-  background-image: url(https://ak3.picdn.net/shutterstock/videos/3914753/thumb/1.jpg);
+  background-image: url('./../images/background.png');
+  background-repeat: repeat;
 }
 
-#toHide {
+.toHide {
   display: none;
 }
 
-#websiteContent {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  display: flex;
   margin-top: 30px;
-  background-color: #254b00;
-  border: 5px solid #7cfc00;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 80px;
+  color: white;
+  background-color: #586666;
+  border: 0;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #6FC685;
+}
+
+h3 {
+  line-height: .75;
+}
+
+#websiteContent {
+  margin-left: 10px;
+  width: 400px;
+  margin-top: 10px;
   margin-bottom: 30px;
+  position: fixed;
+  right: 30px;
+}
+
+#setWording {
+  margin-bottom: 20px;
+}
+
+.boxes {
+  background-color: #2BA84A;
+  border: 3px solid #6FC685;
+  padding: 20px;
+  width: 400px;
+}
+
+#visitorInput {
+  width: 75%;
 }
 
 ul {

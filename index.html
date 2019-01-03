@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <title>Beeps and Boops!</title>
   </head>
   <body>
+
+
     <div class="container">
-      <div id="websiteContent" class="well">
-        <h2>Please enter a single number:</h2>
-        <form id="inputForm" action="index.html" method="post">
-          <div class="form-group">
-             <input type="number" class="form-control" id="visitorInput" placeholder="enter a number">
-           </div>
-           <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <div id="toHide">
-          <h2>What does the ROBOT say!?...</h2>
-          <ul id="finalOutput">
-          </ul>
+      <div id="imageContent">
+        <img id="Gary1" src="./images/GARY.png" alt="Gary the Robot">
+        <img id="Gary2" class="toHide" src="./images/GARYPOINT3.png" alt=""Gary the Robot pointing at your answer>
+      </div>
+      <div id="websiteContent">
+        <div id="setWording" class="boxes">
+
+
+          <h3>This is Gary...</h3>
+          <h3>He is a robot...</h3>
+          <h3>Feed him a number...</h3>
+
+
+          <form id="inputForm" action="index.html" method="post">
+            <div class="form-group">
+               <input type="number" class="form-control" id="visitorInput" placeholder="enter a number">
+               <button type="submit" class="btn btn-primary">Submit</button>
+             </div>
+          </form>
+
         </div>
+
+        <div class="toHide boxes">
+          <h3>What does the ROBOT say!?...</h3>
+          <div class="finalOutput">
+          </div>
+        </div>
+
+
       </div>
     </div>
+
+
   </body>
 </html>
