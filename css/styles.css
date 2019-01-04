@@ -14,6 +14,7 @@ light grey A2BCBC */
 body {
   background-image: url('./../images/background.png');
   background-repeat: repeat;
+  overflow-y: scroll;
 }
 
 .toHide {
@@ -23,6 +24,9 @@ body {
 .container {
   display: flex;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .form-group {
@@ -50,14 +54,19 @@ h3 {
 #websiteContent {
   margin-left: 10px;
   width: 400px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 30px;
   position: fixed;
   left: 550px;
 }
 
+#imageContent {
+  position: fixed;
+  left: 150px;
+}
+
 #setWording {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .boxes {
@@ -75,6 +84,12 @@ ul {
   list-style: none;
 }
 
-#answer {
-  line-height: 1;
+h4 {
+  line-height: 1.25;
+  font-size: 20px;
+}
+
+.finalOutput {
+  max-height: 170px;
+  overflow-y: scroll;
 }

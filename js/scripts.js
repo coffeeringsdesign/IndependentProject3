@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('input[type="number"], textarea').val('');
     textReplaceNumbers(inputNumber);
     const robotResponseFinal = robotResponse.toString();
-    $(".finalOutput").append("<h3>" + robotResponseFinal + "</h3>");
+    $(".finalOutput").append("<h4>" + robotResponseFinal + "</h4>");
     $("#Gary1").addClass("toHide");
     $("#Gary2").removeClass("toHide");
     $("#toHide").show();
