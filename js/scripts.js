@@ -29,5 +29,6 @@ $(document).ready(function() {
     $("#Gary1").addClass("toHide");
     $("#Gary2").removeClass("toHide");
     $("#toHide").show();
+    $("#answer").show();
   });
 });
